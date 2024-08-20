@@ -1,19 +1,19 @@
 body {
-    background-color: $clr-light;
-    color: $clr-dark;
+    background-color: map-get($colores, "clr-light");
+    color: map-get($colores, "clr-dark");
     min-height: 100vh;
 
 }
 a {
-    color: $clr-dark;
+    color: map-get($colores, "clr-dark");
     text-decoration: none;
 }
 header {
-    background-color: $clr-main;
+    background-color: map-get($colores, "clr-main");
     display: flex;
     justify-content: space-between;
     padding: .5em 2em;
-    box-shadow: $box-shadow;
+    box-shadow: map-get($colores, "box-shadow");
 
     .titulo{
         font-size: 2.5rem;
